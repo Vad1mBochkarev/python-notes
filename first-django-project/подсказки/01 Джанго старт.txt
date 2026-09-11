@@ -1,0 +1,32 @@
+Django старт проекта и приложений
+
+ДЛЯ GitBash !!!
+
+
+python -m venv venv            (win)     python3 -m venv venv      (linux/MacOS)
+
+source venv/Scripts/activate   (win)     source venv/bin/activate  (linux/MacOS)
+
+
+deactivate                               -Деативация и 
+rm -r venv				 -удаление окружения
+
+
+python -m pip install --upgrade pip
+
+pip install Django==5.2     актуально на 2025год (находим на оф.сайте актуальную LTS версию)
+			    (для Питона 3.9 используем Джанго 3.2)
+
+
+django-admin startproject <имя проекта>
+
+python manage.py startapp <имя приложения>  (Свое внутреннее приложение внутри проекта)
+
+python manage.py migrate 
+
+python manage.py makemigrations
+
+python manage.py runserver
+
+
+
