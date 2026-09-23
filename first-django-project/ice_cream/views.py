@@ -1,13 +1,13 @@
 from django.shortcuts import render
 
-ICE_CREAM = chr(127846)
-
 
 def ice_cream_detail(request, pk):
-    templates_detail = 'ice_cream/detail.html'
-    return render(request, templates_detail)
+    template = 'ice_cream/detail.html'
+    context = {}
+    return render(request, template, context)
 
 
 def ice_cream_list(request):
-    templates_list = 'ice_cream/list.html'
-    return render(request, templates_list)
+    template = 'ice_cream/list.html'
+    context = {}
+    return render(request, template, context)
