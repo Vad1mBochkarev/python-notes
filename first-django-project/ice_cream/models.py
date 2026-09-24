@@ -24,3 +24,4 @@ class Category(models.Model):
     slug = models.SlugField(max_length=64, unique=True)
     output_order = models.IntegerField(default=100)
     is_published = models.BooleanField(default=True)
+
