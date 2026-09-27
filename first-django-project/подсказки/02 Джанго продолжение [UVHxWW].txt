@@ -1,0 +1,31 @@
+pip install -r requirements.txt  
+
+pip freeze > requirements.txt 
+
+
+
+python manage.py migrate                    Применить миграции  (Применение созданных миграций или "пуш" для БД)
+
+python manage.py makemigrations             Сделать миграции    (черновик/чертеж/"коммит" для БД)
+
+
+
+python manage.py showmigrations --list
+
+python manage.py sqlmigrate <имя приложения> <номер миграции>           Отображает SQL-запросы, которые будут отправлены при миграции.
+
+
+
+python manage.py loaddata <название файла>                                 Загрузка фикстур в БД
+
+
+python manage.py dumpdata -o db.json                            Выгружаем данные всех моделей из БД
+python manage.py dumpdata --indent 2 -o indented_db.json        Выгружаем данные всех моделей из БД с форматированием (с отступами)
+
+python manage.py dumpdata ice_cream -o ice_cream.json                 Выгружаем данные из приложения ice_cream
+python manage.py dumpdata ice_cream.icecream -o ice_cream_icecream.json  Выгружаем данные из из отдельной таблицы
+
+
+
+
+
