@@ -1,4 +1,1 @@
-asgiref==3.12.1
-Django==5.2
-django_debug_toolbar==8.0.0
-sqlparse==0.6.0
+django==3.2.16
