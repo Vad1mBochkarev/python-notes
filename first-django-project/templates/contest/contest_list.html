@@ -1,0 +1,13 @@
+{% extends "base.html" %}
+
+{% block title %}
+  Список заявок
+{% endblock %}
+
+{% block content %}
+  {% for proposal in proposals %}
+    <div>
+      {{ proposal.id }}, {{ proposal.title }}, {{ proposal.price }}, {{ proposal.description }}, {{ proposal.comment }}
+    </div>
+  {% endfor %}
+{% endblock %}

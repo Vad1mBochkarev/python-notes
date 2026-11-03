@@ -16,7 +16,8 @@ def main():
             "forget to activate a virtual environment?"
         ) from exc
     execute_from_command_line(sys.argv)
-    call_command('loaddata', '/app/static_dev/db.json')  # works only on the platform
+    if os.path.exists('/app/static_dev/db.json'):
+        call_command('loaddata', '/app/static_dev/db.json')  # works only on the platform
 
 
 if __name__ == '__main__':
