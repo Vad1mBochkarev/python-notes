@@ -8,6 +8,10 @@
   {% for proposal in proposals %}
     <div>
       {{ proposal.id }}, {{ proposal.title }}, {{ proposal.price }}, {{ proposal.description }}, {{ proposal.comment }}
+      <br>
+      <a href="{% url 'contest:edit' proposal.id %}">Редактировать заявку</a> 
+      | 
+      <a href="{% url 'contest:delete' proposal.id %}">Удалить заявку</a>
     </div>
   {% endfor %}
 {% endblock %}
